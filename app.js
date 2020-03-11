@@ -17,8 +17,20 @@ document.write(`The navigator name is : ${Prograd_2} <br>`);
 // - The driver has the longest name, it has XX characters. or
 // - It seems that the navigator has the longest name, it has XX characters. or
 // - Wow, you both have equally long names, XX characters!.
-var len1 = Prograd_1.length;
-var len2 = Prograd_2.length;
+function lengthOfString(str) {
+    // var str = "Prabhat";
+    var s = 0;
+    do {
+        // console.log(str[s]);
+        s++;
+    } while (str[s] != null)
+    // console.log(s);
+    return s;
+  }
+
+
+var len1 = lengthOfString(Prograd_1);
+var len2 = lengthOfString(Prograd_2);
 if (len1 > len2) {
     console.log(`The driver has the longest name, it has ${len1} characters.`);
     document.write(`The driver has the longest name, it has ${len1} characters.<br>`);
@@ -66,8 +78,7 @@ if (a, e, i, o, u > 0) {
     document.write(`o : ${o}<br>`);
     console.log(`u : ${u}`);
     document.write(`u : ${u}<br>`);
-}
-else{
+} else {
     console.log("No vowels")
     document.write(`No vowels. <br>`);
 }
@@ -189,7 +200,7 @@ if (or == newstr) {
     document.write(or + " is a Palindrome.<br>");
 
 } else {
-    console.log("Not a Palindrome."); 
+    console.log("Not a Palindrome.");
     document.write(or + " is not a Palindrome.<br>");
 }
 
